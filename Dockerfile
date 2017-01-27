@@ -1,6 +1,6 @@
 FROM alpine:latest
 ENV GOPATH /opt/go
-ENV SRCPATH $GOPATH/src/github.com/myENA/consul-backinator
+ENV SRCPATH $GOPATH/src/github.com/NebTex/consul-backinator
 COPY . $SRCPATH
 RUN \
 	apk add --no-cache --no-progress ca-certificates go git bash && \
